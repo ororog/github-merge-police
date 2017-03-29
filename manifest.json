@@ -1,0 +1,15 @@
+{
+  "name": "GitHub Merge Police",
+  "version": "1.0.2",
+  "manifest_version": 2,
+  "description": "Disables a merge button on github if a commit does not meet requirements.",
+  "content_scripts": [{
+    "matches": [
+      "https://github.com/*/*/pull/*"
+    ],
+    "js": ["jquery.min.js", "merge_police.js"]
+  }],
+  "icons": {
+    "128": "icon128.png"
+  }
+}
